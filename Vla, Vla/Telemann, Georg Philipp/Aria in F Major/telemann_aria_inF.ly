@@ -1,4 +1,5 @@
-\version "2.14.2"
+\version "2.18.2"
+
 \include "deutsch.ly"
 
 #(set-global-staff-size 18)
@@ -28,11 +29,11 @@ voiceconsts = {
     <<
       \new Staff <<
 	\set Staff.instrumentName = "Viola1 "
-	 { \va }
+	 {\voiceconsts \va }
       >>
       \new Staff <<
 	\set Staff.instrumentName = "Viola2 "
-		 {\vb}
+	{\voiceconsts \vb}
       >>
     >>
 

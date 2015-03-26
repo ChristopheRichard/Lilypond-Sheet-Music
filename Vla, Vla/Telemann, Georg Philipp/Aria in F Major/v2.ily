@@ -1,9 +1,11 @@
 vb = \relative c' {
-   \voiceconsts	
+
   \clef "alto"
 
   \repeat volta 2 {
-    r4
-    r2 r4 r8 b
+   R2.
+   f8( g) a4 a
+   a4\downbow\accent( g) f
+   f\accent( e) r
 }
 }
