@@ -1,13 +1,12 @@
 \version "2.18.2"
 
-\include "deutsch.ly"
 
 #(set-global-staff-size 18)
 
 \header {
   title = "Air in F"
   composer = "Georg Philipp Telemann"
-  arranger = "(1689-1755)"
+  arranger = "(1681-1767)"
   enteredby = "chris (2015-03-24)"
 }
 
@@ -17,6 +16,7 @@ voiceconsts = {
  \compressFullBarRests
  \time 3/4
  \tempo "Allegretto"
+ \set Timing.beamExceptions = #'()
 }
 
 \include "v1.ily"
@@ -25,7 +25,7 @@ voiceconsts = {
 \book {
 
   \score {
-
+  \new StaffGroup
     <<
       \new Staff <<
 	\set Staff.instrumentName = "Viola1 "
